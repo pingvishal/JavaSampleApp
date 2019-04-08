@@ -9,7 +9,7 @@
       "value": "vishal-webapp-hosting-plan"
     },
     "appInsightsLocation": {
-      "value": "South Central US"
+      "value": "eastus"
     },
     "sku": {
       "value": "S1 Standard"
