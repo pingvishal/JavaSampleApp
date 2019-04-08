@@ -2,17 +2,23 @@
   "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
   "contentVersion": "1.0.0.0",
   "parameters": {
-    "newStorageAccountName": {
-      "value": "GEN-UNIQUE-8"
+    "webAppName": {
+      "value": "vishal-dev-webapp"
     },
-    "adminUsername": {
-      "value": "ubuntu"
+    "hostingPlanName": {
+      "value": "vishal-webapp-hosting-plan"
     },
-    "adminPassword": {
-      "value": "GEN-PASSWORD"
+    "appInsightsLocation": {
+      "value": "South Central US"
     },
-    "dnsNameForPublicIP": {
-      "value": "GEN-UNIQUE"
+    "sku": {
+      "value": "S1 Standard"
+    },
+    "linuxFxVersion": {
+      "value": ""
+    },
+    "startupCommand": {
+      "value": "echo hello"
     }
   }
 }
