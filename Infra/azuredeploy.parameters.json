@@ -19,6 +19,9 @@
     },
     "startupCommand": {
       "value": "echo hello"
+    },
+    "environment" {
+      "value": "dev"
     }
   }
 }
