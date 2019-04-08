@@ -20,7 +20,7 @@
     "startupCommand": {
       "value": "echo hello"
     },
-    "environment" {
+    "environment": {
       "value": "dev"
     }
   }
