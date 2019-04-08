@@ -22,10 +22,6 @@
         "startupCommand": {
             "type": "string",
             "defaultValue": ""
-        },
-        "environment" {
-            "type": "string",
-            "defaultValue": "dev"
         }
     },
     "resources": [
@@ -50,8 +46,7 @@
             },
             "location": "[resourceGroup().location]",
             "tags": {
-                "[concat('hidden-related:', '/subscriptions/', subscription().subscriptionId,'/resourcegroups/', resourceGroup().name, '/providers/Microsoft.Web/serverfarms/', parameters('hostingPlanName'))]": "empty",
-                "env": "[parameters('environment')]"
+                "[concat('hidden-related:', '/subscriptions/', subscription().subscriptionId,'/resourcegroups/', resourceGroup().name, '/providers/Microsoft.Web/serverfarms/', parameters('hostingPlanName'))]": "empty"
             },
             "dependsOn": [
                 "[concat('Microsoft.Web/serverfarms/', parameters('hostingPlanName'))]",
