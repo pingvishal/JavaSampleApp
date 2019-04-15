@@ -9,7 +9,7 @@
       "value": "vishal-webapp-hosting-plan"
     },
     "appInsightsLocation": {
-      "value": "$(webappLocation)"
+      "value": "eastus2"
     },
     "sku": {
       "value": "B1 Standard"
