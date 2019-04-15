@@ -12,7 +12,7 @@
       "value": "eastus2"
     },
     "sku": {
-      "value": "A1 Standard"
+      "value": "B1 Standard"
     },
     "linuxFxVersion": {
       "value": ""
