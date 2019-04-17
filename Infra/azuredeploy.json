@@ -21,21 +21,9 @@
         "startupCommand": {
             "type": "string",
             "defaultValue": ""
-        },
-	"rgLocation": {
-	    "type": "string"
-	},
-	"rgName": {
-	    "type": "string"
-	}
+        }
     },
     "resources": [
-	{
-	    "type": "Microsoft.Resources/resourceGroups",
-	    "apiVersion": "2018-05-01",
-      	    "location": "[parameters('rgLocation')]",
-            "name": "[parameters('rgName')]"
-        },
         {
             "apiVersion": "2016-03-01",
             "name": "[parameters('webAppName')]",
