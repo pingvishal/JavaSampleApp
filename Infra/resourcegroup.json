@@ -1,6 +1,6 @@
 {
   "$schema": "https://schema.management.azure.com/schemas/2018-05-01/subscriptionDeploymentTemplate.json#",
-  "contentVersion": "1.0.0.0",
+  "contentVersion": "1.0.0.1",
   "parameters": {
     "rgLocation": {
       "type": "string"
@@ -15,7 +15,8 @@
       "type": "Microsoft.Resources/resourceGroups",
       "apiVersion": "2018-05-01",
       "location": "[parameters('rgLocation')]",
-      "name": "[parameters('rgName')]"
+      "name": "[parameters('rgName')]",
+      "properties": {}
     }
   ],
   "outputs": {}
