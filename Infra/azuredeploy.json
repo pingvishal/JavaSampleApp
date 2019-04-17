@@ -21,7 +21,11 @@
         "startupCommand": {
             "type": "string",
             "defaultValue": ""
-        }
+        },
+	"appLocation": {
+	    "type": "string",
+	    "defaultValue": ""
+	}
     },
     "resources": [
         {
@@ -43,7 +47,7 @@
                 "serverFarmId": "[concat('/subscriptions/', subscription().subscriptionId,'/resourcegroups/', resourceGroup().name, '/providers/Microsoft.Web/serverfarms/', parameters('hostingPlanName'))]",
                 "hostingEnvironment": ""
             },
-            "location": "[resourceGroup().location]",
+            "location": "[parameters('appLocation')]",
             "tags": {
                 "[concat('hidden-related:', '/subscriptions/', subscription().subscriptionId,'/resourcegroups/', resourceGroup().name, '/providers/Microsoft.Web/serverfarms/', parameters('hostingPlanName'))]": "empty"
             },
@@ -56,7 +60,7 @@
             "apiVersion": "2016-09-01",
             "name": "[parameters('hostingPlanName')]",
             "type": "Microsoft.Web/serverfarms",
-            "location": "[resourceGroup().location]",
+            "location": "[parameters('appLocation')]",
             "properties": {
                 "name": "[parameters('hostingPlanName')]",
                 "workerSizeId": "0",
@@ -74,7 +78,7 @@
             "type": "Microsoft.Insights/components",
             "name": "[parameters('webAppName')]",
             "apiVersion": "2014-04-01",
-            "location": "[parameters('appInsightsLocation')]",
+            "location": "[parameters('appLocation')]",
             "tags": {
                 "[concat('hidden-link:', resourceGroup().id, '/providers/Microsoft.Web/sites/', parameters('webAppName'))]": "Resource"
             },

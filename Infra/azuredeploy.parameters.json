@@ -2,20 +2,14 @@
   "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
   "contentVersion": "1.0.0.0",
   "parameters": {
-    "rgLocation": {
-      "value": "centralus"
-    },
-    "rgName": {
-      "value": "default-vishal-rg"
+    "appLocation": {
+      "value": "eastus"
     },
     "webAppName": {
       "value": "vishal-dev-webapp"
     },
     "hostingPlanName": {
       "value": "vishal-webapp-hosting-plan"
-    },
-    "appInsightsLocation": {
-      "value": "eastus2"
     },
     "sku": {
       "value": "B1 Standard"
