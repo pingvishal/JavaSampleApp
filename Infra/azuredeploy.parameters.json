@@ -6,7 +6,7 @@
       "value": "centralus"
     },
     "rgName": {
-      "value": "$(resourceGroupName)$(Release.EnvironmentName)"
+      "value": "default-vishal-rg"
     },
     "webAppName": {
       "value": "vishal-dev-webapp"
