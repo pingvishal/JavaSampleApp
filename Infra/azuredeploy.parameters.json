@@ -9,7 +9,7 @@
       "value": "$(resourceGroupName)$(Release.EnvironmentName)"
     },
     "webAppName": {
-      "value": "vishal-$(Release.EnvironmentName)-webapp"
+      "value": "vishal-dev-webapp"
     },
     "hostingPlanName": {
       "value": "vishal-webapp-hosting-plan"
